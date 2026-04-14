@@ -18,7 +18,7 @@ function ParcoursPage() {
       periode: '28/04/2025 → 25/06/2025',
       titre: 'Stage de 1ère année',
       details:
-        'Veille concurrentielle sur des sites de marketing digital, développement/déploiement WordPress et optimisation SEO + lisibilité des contenus.',
+        "Veille concurrentielle sur des sites de marketing digital, développement/déploiement d'un site WordPress et optimisation SEO + lisibilité des contenus.",
       statut: 'Stage',
     },
     {

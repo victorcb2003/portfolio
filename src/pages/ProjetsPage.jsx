@@ -30,7 +30,7 @@ function ProjetsPage() {
     },
     {
       periode: '15/09/2025 → 31/03/2026',
-      titre: 'Projet E6 — Application mobile en équipe',
+      titre: 'Projet E6 — Application mobile et web en équipe',
       details:
         'Conception front-end/back-end, intégration API et déploiement sur infrastructure interne avec gestion des accès.',
       techno: 'API, Base de données, Déploiement interne',

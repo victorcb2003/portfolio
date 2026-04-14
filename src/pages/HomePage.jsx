@@ -15,7 +15,7 @@ function HomePage() {
             <li>Développement front-end / back-end</li>
             <li>Intégration d’API</li>
             <li>Base de données SQL</li>
-            <li>Déploiement sur serveur interne</li>
+            <li>Déploiement sur serveur </li>
           </ul>
         </article>
 
