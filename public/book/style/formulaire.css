@@ -1,0 +1,37 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+#deco button {
+    background-color: red;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

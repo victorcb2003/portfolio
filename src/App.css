@@ -192,6 +192,21 @@
   letter-spacing: 0.02em;
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--heading);
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-border);
+}
+
+.project-link:hover {
+  background: rgba(125, 178, 255, 0.25);
+}
+
 .footer {
   border-top: 1px solid var(--border);
   background: var(--bg-soft);

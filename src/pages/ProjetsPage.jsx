@@ -1,5 +1,5 @@
 function ProjetsPage() {
-  const projets = [
+  const projetsEcole = [
     {
       periode: '10/10/2024 → 01/12/2024',
       titre: 'AP1 — Site vitrine (entreprise fictive)',
@@ -13,6 +13,7 @@ function ProjetsPage() {
       details:
         'Développement d’une application de gestion de librairie numérique avec authentification et opérations CRUD.',
       techno: 'PHP, MySQL, SQL, Bootstrap',
+      lien: '/book',
     },
     {
       periode: '01/01/2025 → 10/04/2025',
@@ -25,7 +26,7 @@ function ProjetsPage() {
       periode: '01/01/2025 → 10/04/2025',
       titre: 'Application React',
       details:
-        'Création d’une SPA avec composants réutilisables, routage et structuration claire du front-end.',
+        'Création de composants réutilisables, routage et structuration claire du front-end.',
       techno: 'React, Vite',
     },
     {
@@ -37,18 +38,74 @@ function ProjetsPage() {
     },
   ]
 
+  const projetsPerso = [
+    {
+      periode: '2026',
+      titre: 'Jeu d’échecs POO',
+      details:
+        'Jeu d’échecs développé en JavaScript orienté objet, avec gestion des pièces, règles de déplacement et interface web.',
+      techno: 'JavaScript, HTML, CSS, POO',
+      lien: '/JeuEchecPOO/index.html',
+    },
+    {
+      periode: '2026',
+      titre: 'Simulation 3D Système solaire (TreeJs)',
+      details:
+        'Application 3D interactive de visualisation du système solaire avec navigation caméra, orbites et interface utilisateur.',
+      techno: 'JavaScript, Three.js, HTML, CSS, WebGL',
+      lien: '/TreeJs/index.html',
+    },
+  ]
+
   return (
     <section>
       <h2>Projets</h2>
       <p>Vue dédiée de mes réalisations techniques en formation et en entreprise.</p>
 
+      <h3 className="section-title">Projets école</h3>
       <div className="timeline">
-        {projets.map((item) => (
+        {projetsEcole.map((item) => (
           <article className="timeline-item" key={`${item.periode}-${item.titre}`}>
             <p className="date">{item.periode}</p>
             <h3>{item.titre}</h3>
             <p>{item.details}</p>
             <p className="tag">Technos : {item.techno}</p>
+            {item.lien && (
+              <p>
+                <a
+                  className="project-link"
+                  href={item.lien}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir le projet
+                </a>
+              </p>
+            )}
+          </article>
+        ))}
+      </div>
+
+      <h3 className="section-title">Projets perso</h3>
+      <div className="timeline">
+        {projetsPerso.map((item) => (
+          <article className="timeline-item" key={`${item.periode}-${item.titre}`}>
+            <p className="date">{item.periode}</p>
+            <h3>{item.titre}</h3>
+            <p>{item.details}</p>
+            <p className="tag">Technos : {item.techno}</p>
+            {item.lien && (
+              <p>
+                <a
+                  className="project-link"
+                  href={item.lien}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir le projet
+                </a>
+              </p>
+            )}
           </article>
         ))}
       </div>
