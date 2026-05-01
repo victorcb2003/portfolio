@@ -1,5 +1,5 @@
 import { NavLink, Route, Routes } from 'react-router-dom'
-import tableauSynthesePdf from './assets/TableauSynthese.pdf'
+import tableauSynthesePdf from '../public/TableauSynthese.pdf'
 import './App.css'
 import HomePage from './pages/HomePage'
 import ParcoursPage from './pages/ParcoursPage'
