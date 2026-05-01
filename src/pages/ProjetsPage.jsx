@@ -6,6 +6,8 @@ function ProjetsPage() {
       details:
         'Conception de la maquette, intégration HTML/CSS responsive et mise en valeur des services de l’entreprise.',
       techno: 'HTML, CSS, JavaScript',
+      lien: '/AP1/main.html',
+      documentation: '/Documentation/AP1_Documentation.pdf',
     },
     {
       periode: '01/01/2025 → 10/04/2025',
@@ -14,20 +16,7 @@ function ProjetsPage() {
         'Développement d’une application de gestion de librairie numérique avec authentification et opérations CRUD.',
       techno: 'PHP, MySQL, SQL, Bootstrap',
       lien: '/book',
-    },
-    {
-      periode: '01/01/2025 → 10/04/2025',
-      titre: 'Apps web avec API + localStorage/cookies',
-      details:
-        'Consommation d’API externes, gestion de sessions côté client et stockage local pour améliorer l’expérience utilisateur.',
-      techno: 'JavaScript, API REST, localStorage, Cookies',
-    },
-    {
-      periode: '01/01/2025 → 10/04/2025',
-      titre: 'Application React',
-      details:
-        'Création de composants réutilisables, routage et structuration claire du front-end.',
-      techno: 'React, Vite',
+      documentation: '/Documentation/Book_Documentation.pdf',
     },
     {
       periode: '15/09/2025 → 31/03/2026',
@@ -35,6 +24,8 @@ function ProjetsPage() {
       details:
         'Conception front-end/back-end, intégration API et déploiement sur infrastructure interne avec gestion des accès.',
       techno: 'API, Base de données, Déploiement interne',
+      lien: 'https://clashofleagues.fr/',
+      documentation: '/Documentation/E6_ClashOfLeague_Documentation.pdf',
     },
   ]
 
@@ -70,8 +61,8 @@ function ProjetsPage() {
             <h3>{item.titre}</h3>
             <p>{item.details}</p>
             <p className="tag">Technos : {item.techno}</p>
-            {item.lien && (
-              <p>
+            <div className="project-links">
+              {item.lien && (
                 <a
                   className="project-link"
                   href={item.lien}
@@ -80,8 +71,18 @@ function ProjetsPage() {
                 >
                   Voir le projet
                 </a>
-              </p>
-            )}
+              )}
+              {item.documentation && (
+                <a
+                  className="project-link"
+                  href={item.documentation}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Voir la documentation
+                </a>
+              )}
+            </div>
           </article>
         ))}
       </div>

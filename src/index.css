@@ -1,17 +1,19 @@
 :root {
-  --bg: #0f1428;
-  --bg-soft: #171f39;
-  --text: #dbe2ff;
-  --text-muted: #aeb7d8;
-  --heading: #f4f7ff;
-  --border: #2a3662;
-  --primary: #7db2ff;
-  --primary-soft: rgba(125, 178, 255, 0.15);
-  --primary-border: rgba(125, 178, 255, 0.35);
-  --secondary: #a37dff;
-  --tertiary: #40d4ff;
+  --bg:             #060c1c;
+  --bg-soft:        #0b1228;
+  --bg-card:        rgba(12, 20, 45, 0.75);
+  --text:           #b8c8e8;
+  --text-muted:     #5a6d94;
+  --heading:        #eef3ff;
+  --border:         rgba(90, 120, 200, 0.2);
+  --border-hover:   rgba(125, 178, 255, 0.4);
+  --primary:        #7db2ff;
+  --primary-soft:   rgba(125, 178, 255, 0.1);
+  --primary-border: rgba(125, 178, 255, 0.28);
+  --secondary:      #a37dff;
+  --tertiary:       #40d4ff;
 
-  font: 17px/1.55 Inter, 'Segoe UI', Roboto, Arial, sans-serif;
+  font: 16px/1.65 'Inter', 'Segoe UI', system-ui, sans-serif;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
@@ -20,38 +22,37 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 130% 60% at 10% -5%, rgba(60, 100, 255, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 50% at 90% 5%, rgba(140, 80, 255, 0.07) 0%, transparent 55%),
+    var(--bg);
+  background-attachment: fixed;
 }
 
 #root {
   min-height: 100vh;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   color: var(--heading);
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.55rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
 }
 
-h1 {
-  font-size: clamp(1.45rem, 2.8vw, 2rem);
-}
+h1 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+h2 { font-size: clamp(1.25rem, 2.5vw, 1.65rem); }
+h3 { font-size: clamp(1rem, 1.5vw, 1.08rem); }
 
-h2 {
-  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
-}
-
-p {
-  margin: 0;
-}
-
-a {
-  color: inherit;
-}
-
-ul {
-  margin: 0.4rem 0 0;
-  padding-left: 1.1rem;
-}
+p { margin: 0; }
+a { color: inherit; transition: color 0.15s ease; }
+ul { margin: 0.5rem 0 0; padding-left: 1.15rem; }
+li { margin-top: 0.3rem; }

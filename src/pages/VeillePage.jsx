@@ -5,12 +5,19 @@ function VeillePage() {
   return (
     <section>
       <h2>Veille technologique</h2>
+      <p className="intro-text">
+        Je réalise ma veille autour de l’alignement en intelligence artificielle,
+        en m’appuyant notamment sur Google Alerts pour rester informé des
+        nouvelles publications, articles et analyses sur le sujet.
+      </p>
 
       <div className="card-grid">
         <article className="card card-accent-blue">
           <h3>L’alignement en intelligence artificielle</h3>
           <p>
-            Cette veille porte sur l’alignement en IA : L’alignement désigne l’ensemble des techniques visant à intégrer des valeurs humaines (juridiques, éthiques ou sécuritaires) directement dans le fonctionnement et l’architecture des systèmes d’IA. Concrètement, il s’agit d’ajuster ces systèmes pour qu’ils produisent des réponses fiables tout en évitant certains usages jugés dangereux. L’objectif est d’éviter que la machine ne s’écarte des principes fondamentaux et ce même si un utilisateur tente de la détourner.
+            L’alignement désigne les techniques qui visent à faire correspondre
+            le comportement d’une IA avec les valeurs humaines, juridiques,
+            éthiques et sécuritaires.
           </p>
           <p>
             L’enjeu principal est d’éviter qu’une IA atteigne un objectif de
@@ -64,17 +71,39 @@ function VeillePage() {
         </article>
 
         <article className="card card-highlight">
-          <h3>Sources de veille</h3>
+          <h3>Sources de recherche</h3>
           <ul>
             <li>Wikipedia</li>
-            <li>OpenAI</li>
+            <li>OpenAI (article)</li>
+            <li>Antropic (article)</li>
             <li>Google</li>
             <li>BlueDot (blog)</li>
             <li>EGO</li>
             <li>YouTube</li>
-            <li>Google news</li>
             <li>Inoreader</li>
           </ul>
+        </article>
+      </div>
+
+      <div className="card-grid">
+        <article className="card card-accent-pink">
+          <h3>Méthode de veille</h3>
+          <p>
+            J’utilise Google Alerts pour suivre automatiquement les nouveaux
+            contenus publiés sur l’IA et l’alignement.
+          </p>
+          <p>
+            Je complète ensuite avec des articles, vidéos et blogs spécialisés
+            pour comparer les points de vue et mieux comprendre les enjeux.
+          </p>
+        </article>
+
+        <article className="card card-highlight">
+          <h3>Objectif de la veille</h3>
+          <p>
+            Rester informé sur les risques, les usages et les évolutions de l’IA
+            afin d’avoir une vision plus critique et documentée du sujet.
+          </p>
         </article>
       </div>
     </section>
