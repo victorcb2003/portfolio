@@ -2,7 +2,7 @@ import { CgFileDocument } from "react-icons/cg";
 
 function StageAlternancePage() {
   const stage = {
-    entreprise: 'Connect Action',
+    entreprise: "Connect'Action",
     periode: '28/04/2025 → 25/06/2025',
   }
 
@@ -30,7 +30,7 @@ function StageAlternancePage() {
   const stageMissions = [
     {
       periode: '28/04/2025 → 25/06/2025',
-      titre: 'Veille concurrentielle marketing digital',
+      titre: 'Recherche concurrentielle marketing digital',
       details: 'Analyse de sites et benchmark.',
       documentation: '/Documentation/Stage_1_Recherche_Concurrentielle.pdf',
     },

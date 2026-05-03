@@ -67,7 +67,7 @@ function VeillePage() {
           <ul>
             <li>Wikipedia</li>
             <li>OpenAI (articles)</li>
-            <li>Antropic (articles)</li>
+            <li>Anthropic (articles)</li>
             <li>BlueDot (blog)</li>
             <li>EGO</li>
             <li>YouTube</li>

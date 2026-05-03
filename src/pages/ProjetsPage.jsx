@@ -1,5 +1,5 @@
 import { CgFileDocument } from 'react-icons/cg'
-import { FaRegPlayCircle } from 'react-icons/fa'
+import { FaRegPlayCircle, FaGithub } from 'react-icons/fa'
 
 function ProjetsPage() {
   const projetsEcole = [
@@ -8,9 +8,10 @@ function ProjetsPage() {
       titre: 'AP1 — Site vitrine (entreprise fictive)',
       details:
         'Conception de la maquette, intégration HTML/CSS responsive et mise en valeur des services de l’entreprise.',
-      techno: 'HTML, CSS, JavaScript',
+      techno: 'HTML, CSS',
       lien: '/AP1/main.html',
       documentation: '/Documentation/AP1_Documentation.pdf',
+      github: 'https://github.com/victorcb2003/AP1',
     },
     {
       periode: '01/01/2025 → 10/04/2025',
@@ -20,15 +21,17 @@ function ProjetsPage() {
       techno: 'PHP, MySQL, SQL, Bootstrap',
       lien: '/book',
       documentation: '/Documentation/Book_Documentation.pdf',
+      github: 'https://github.com/victorcb2003/book',
     },
     {
       periode: '15/09/2025 → 31/03/2026',
       titre: 'Projet E6 — Application mobile et web en équipe',
       details:
         'Conception front-end/back-end, intégration API et déploiement sur infrastructure interne avec gestion des accès.',
-      techno: 'API, Base de données, Déploiement interne',
+      techno: 'React Native, Node.js, MySQL',
       lien: 'https://clashofleagues.fr/',
       documentation: '/Documentation/E6_ClashOfLeague_Documentation.pdf',
+      github: 'https://github.com/victorcb2003/ClashFrontEnd',
     },
   ]
 
@@ -40,6 +43,7 @@ function ProjetsPage() {
         'Jeu d’échecs développé en JavaScript orienté objet, avec gestion des pièces, règles de déplacement et interface web.',
       techno: 'JavaScript, HTML, CSS, POO',
       lien: '/JeuEchecPOO/index.html',
+      github: 'https://github.com/victorcb2003/JeuEchecPOO',
     },
     {
       periode: '2026',
@@ -48,6 +52,7 @@ function ProjetsPage() {
         'Application 3D interactive de visualisation du système solaire avec navigation caméra, orbites et interface utilisateur.',
       techno: 'JavaScript, Three.js, HTML, CSS, WebGL',
       lien: '/TreeJs/index.html',
+      github: 'https://github.com/victorcb2003/TreeJs',
     },
   ]
 
@@ -85,6 +90,18 @@ function ProjetsPage() {
                   <CgFileDocument />
                 </a>
               )}
+              {item.github && (
+                <a
+                  className="project-link icon-link"
+                  href={item.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Voir le repository GitHub : ${item.titre}`}
+                  title="Voir sur GitHub"
+                >
+                  <FaGithub />
+                </a>
+              )}
             </div>
             <p className="date">{item.periode}</p>
             <h3>{item.titre}</h3>
@@ -109,6 +126,18 @@ function ProjetsPage() {
                   title="Voir le projet"
                 >
                   <FaRegPlayCircle />
+                </a>
+              )}
+              {item.github && (
+                <a
+                  className="project-link icon-link"
+                  href={item.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Voir le repository GitHub : ${item.titre}`}
+                  title="Voir sur GitHub"
+                >
+                  <FaGithub />
                 </a>
               )}
             </div>
