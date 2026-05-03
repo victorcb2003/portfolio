@@ -1,6 +1,6 @@
-import * as THREE from "../node_modules/three/build/three.module.js";
+import * as THREE from "three";
 import { Entity } from "./entity.js";
-import { GLTFLoader } from "../node_modules/three/examples/jsm/loaders/GLTFLoader.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 export class Ring extends Entity {
   /**
