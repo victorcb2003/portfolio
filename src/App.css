@@ -293,11 +293,73 @@
   transform: translateX(3px);
 }
 
+.icon-link {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-top: 0;
+  border-radius: 12px;
+  justify-content: center;
+}
+
+.icon-link::after {
+  content: none;
+}
+
+.icon-link svg {
+  width: 22px;
+  height: 22px;
+}
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 0.9rem;
+}
+
+.project-item {
+  padding-right: 6.2rem;
+}
+
+.project-icons-corner {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  display: flex;
+  gap: 0.45rem;
+}
+
+.mission-item {
+  padding-right: 4rem;
+}
+
+.doc-icon-link {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: 1px solid var(--primary-border);
+  background: var(--primary-soft);
+  color: var(--heading);
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.doc-icon-link:hover {
+  transform: translateY(-1px);
+  background: rgba(125, 178, 255, 0.22);
+  border-color: rgba(125, 178, 255, 0.5);
+}
+
+.doc-icon-link svg {
+  width: 24px;
+  height: 24px;
 }
 
 /* ── Footer ───────────────────────────────────────────────── */

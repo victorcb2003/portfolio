@@ -1,3 +1,5 @@
+import { CgFileDocument } from "react-icons/cg";
+
 function StageAlternancePage() {
   const stage = {
     entreprise: 'Connect Action',
@@ -30,44 +32,50 @@ function StageAlternancePage() {
       periode: '28/04/2025 → 25/06/2025',
       titre: 'Veille concurrentielle marketing digital',
       details: 'Analyse de sites et benchmark.',
+      documentation: '/Documentation/Stage_1_Recherche_Concurrentielle.pdf',
     },
     {
       periode: '28/04/2025 → 25/06/2025',
       titre: "Développement et déploiement d'un site WordPress",
       details: 'Création, configuration et mise en ligne.',
+      documentation: '/Documentation/Stage_2_Developpement_WordPress.pdf',
     },
     {
       periode: '28/04/2025 → 25/06/2025',
       titre: 'Optimisation SEO et lisibilité',
       details: 'Amélioration du SEO et de l’ergonomie.',
+      documentation: '/Documentation/Stage_3_Optimisation_SEO.pdf',
     },
   ]
 
   const alternanceMissions = [
     {
       periode: '19/11/2025 → 20/03/2026',
-      titre: 'Support utilisateurs via Zendesk',
-      details: 'Traitement des demandes et suivi des tickets.',
+      titre: 'Déploiement web interne',
+      details:
+        'Déploiement d’applications web sur un serveur interne (configuration environnement, mise en production, gestion des accès).',
+      documentation: '/Documentation/Alternance_3_Maintenance.pdf',
     },
     {
       periode: '19/11/2025 → 20/03/2026',
-      titre: 'Sécurisation des applications web et mobile',
-      details: 'Renforcement de la sécurité et correction des vulnérabilités.',
+      titre: 'Développement web',
+      details:
+        'Développement d’applications web (front-end et back-end) avec gestion de base de données et API.',
+      documentation: '/Documentation/Alternance_1_Developpement_Web.pdf',
     },
     {
       periode: '19/11/2025 → 20/03/2026',
-      titre: 'Développement d’une application mobile',
-      details: 'Conception et évolution de l’application.',
+      titre: 'Application mobile',
+      details:
+        'Développement d’une application mobile connectée à une API.',
+      documentation: '/Documentation/Alternance_2_Application_Mobile.pdf',
     },
     {
       periode: '19/11/2025 → 20/03/2026',
-      titre: 'Déploiement sur serveur interne',
-      details: 'Mise en place de l’environnement et déploiement.',
-    },
-    {
-      periode: '19/11/2025 → 20/03/2026',
-      titre: 'Développement web front-end / back-end',
-      details: 'Applications web avec base de données et API.',
+      titre: 'Maintenance applicative',
+      details:
+        'Maintenance et amélioration d’applications existantes (corrections de bugs, évolutions fonctionnelles).',
+      documentation: '/Documentation/Alternance_3_Maintenance.pdf',
     },
   ]
 
@@ -108,7 +116,17 @@ function StageAlternancePage() {
 
           <div className="timeline">
             {stageMissions.map((item) => (
-              <article className="timeline-item" key={`${item.periode}-${item.titre}`}>
+              <article className="timeline-item mission-item" key={`${item.periode}-${item.titre}`}>
+                <a
+                  className="doc-icon-link"
+                  href={item.documentation}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Voir la documentation : ${item.titre}`}
+                  title="Voir la documentation"
+                >
+                  <CgFileDocument />
+                </a>
                 <p className="date">{item.periode}</p>
                 <h3>{item.titre}</h3>
                 <p>{item.details}</p>
@@ -128,7 +146,17 @@ function StageAlternancePage() {
 
           <div className="timeline">
             {alternanceMissions.map((item) => (
-              <article className="timeline-item" key={`${item.periode}-${item.titre}`}>
+              <article className="timeline-item mission-item" key={`${item.periode}-${item.titre}`}>
+                <a
+                  className="doc-icon-link"
+                  href={item.documentation}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Voir la documentation : ${item.titre}`}
+                  title="Voir la documentation"
+                >
+                  <CgFileDocument />
+                </a>
                 <p className="date">{item.periode}</p>
                 <h3>{item.titre}</h3>
                 <p>{item.details}</p>

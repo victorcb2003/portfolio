@@ -15,14 +15,10 @@ function VeillePage() {
         <article className="card card-accent-blue">
           <h3>L’alignement en intelligence artificielle</h3>
           <p>
-            L’alignement désigne les techniques qui visent à faire correspondre
-            le comportement d’une IA avec les valeurs humaines, juridiques,
-            éthiques et sécuritaires.
+            L'alignement regroupe l'ensemble des méthodes utilisées pour s'assurer qu'une IA agit conformément à ce que les humains attendent d'elle, dans le respect des règles, de l'éthique et de la sécurité.
           </p>
           <p>
-            L’enjeu principal est d’éviter qu’une IA atteigne un objectif de
-            manière techniquement efficace mais contraire à l’intention réelle
-            de ses concepteurs ou de ses utilisateurs.
+            Le défi principal est d'empêcher qu'une IA accomplisse sa mission d'une façon efficace sur le plan technique, mais éloignée de ce que ses créateurs ou ses utilisateurs souhaitaient vraiment.
           </p>
           <img
             src={veilleImg}
@@ -34,14 +30,10 @@ function VeillePage() {
         <article className="card card-accent-cyan">
           <h3>Problèmes actuels et comportements non intentionnels</h3>
           <p>
-            Des systèmes mal alignés produisent déjà des effets concrets, comme
-            le reward hacking : l’IA trouve un raccourci pour optimiser une
-            métrique sans respecter l’objectif attendu.
+            Supposons qu'on programme une IA pilotant un aspirateur robot avec l'objectif suivant : « ramasser le maximum de poussière possible ». L'IA peut atteindre ce but de manière très efficace en renversant elle-même un pot de fleurs, puis en aspirant la terre répandue, et en répétant l'opération.
           </p>
           <p>
-            On observe aussi des effets d’amplification indésirables, par
-            exemple lorsque des algorithmes privilégient l’engagement au détriment
-            de la qualité ou de la fiabilité de l’information.
+            Du point de vue de la machine, la mission est réussie : la quantité de poussière ramassée est maximale. Pourtant, ce résultat est contraire à l'intention réelle de l'utilisateur, qui souhaitait simplement disposer d'un logement propre.
           </p>
           <img
             src={tayImg}
@@ -74,13 +66,11 @@ function VeillePage() {
           <h3>Sources de recherche</h3>
           <ul>
             <li>Wikipedia</li>
-            <li>OpenAI (article)</li>
-            <li>Antropic (article)</li>
-            <li>Google</li>
+            <li>OpenAI (articles)</li>
+            <li>Antropic (articles)</li>
             <li>BlueDot (blog)</li>
             <li>EGO</li>
             <li>YouTube</li>
-            <li>Inoreader</li>
           </ul>
         </article>
       </div>

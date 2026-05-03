@@ -1,3 +1,6 @@
+import { CgFileDocument } from 'react-icons/cg'
+import { FaRegPlayCircle } from 'react-icons/fa'
+
 function ProjetsPage() {
   const projetsEcole = [
     {
@@ -56,33 +59,37 @@ function ProjetsPage() {
       <h3 className="section-title">Projets école</h3>
       <div className="timeline">
         {projetsEcole.map((item) => (
-          <article className="timeline-item" key={`${item.periode}-${item.titre}`}>
-            <p className="date">{item.periode}</p>
-            <h3>{item.titre}</h3>
-            <p>{item.details}</p>
-            <p className="tag">Technos : {item.techno}</p>
-            <div className="project-links">
+          <article className="timeline-item project-item" key={`${item.periode}-${item.titre}`}>
+            <div className="project-icons-corner">
               {item.lien && (
                 <a
-                  className="project-link"
+                  className="project-link icon-link"
                   href={item.lien}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Voir le projet : ${item.titre}`}
+                  title="Voir le projet"
                 >
-                  Voir le projet
+                  <FaRegPlayCircle />
                 </a>
               )}
               {item.documentation && (
                 <a
-                  className="project-link"
+                  className="project-link icon-link"
                   href={item.documentation}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Voir la documentation : ${item.titre}`}
+                  title="Voir la documentation"
                 >
-                  Voir la documentation
+                  <CgFileDocument />
                 </a>
               )}
             </div>
+            <p className="date">{item.periode}</p>
+            <h3>{item.titre}</h3>
+            <p>{item.details}</p>
+            <p className="tag">Technos : {item.techno}</p>
           </article>
         ))}
       </div>
@@ -90,23 +97,25 @@ function ProjetsPage() {
       <h3 className="section-title">Projets perso</h3>
       <div className="timeline">
         {projetsPerso.map((item) => (
-          <article className="timeline-item" key={`${item.periode}-${item.titre}`}>
+          <article className="timeline-item project-item" key={`${item.periode}-${item.titre}`}>
+            <div className="project-icons-corner">
+              {item.lien && (
+                <a
+                  className="project-link icon-link"
+                  href={item.lien}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Voir le projet : ${item.titre}`}
+                  title="Voir le projet"
+                >
+                  <FaRegPlayCircle />
+                </a>
+              )}
+            </div>
             <p className="date">{item.periode}</p>
             <h3>{item.titre}</h3>
             <p>{item.details}</p>
             <p className="tag">Technos : {item.techno}</p>
-            {item.lien && (
-              <p>
-                <a
-                  className="project-link"
-                  href={item.lien}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Voir le projet
-                </a>
-              </p>
-            )}
           </article>
         ))}
       </div>
