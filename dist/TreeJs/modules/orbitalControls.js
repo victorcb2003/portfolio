@@ -1,4 +1,4 @@
-import { OrbitControls } from "../node_modules/three/examples/jsm/controls/OrbitControls.js";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 export function orbitalControls(camera, canvas, pov) {
   if (pov === "Orbital") {
