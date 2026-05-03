@@ -1,42 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="importmap">
-            {
-                "imports": {
-                    "three": "./node_modules/three/build/three.module.js",
-                    "three/": "./node_modules/three/"
-                }
-            }
-        </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.180.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.180.0/examples/jsm/"
+  }
+}
+</script>
     <script type="module" src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Système solaire</title>
-</head>
-<body>
-        <canvas id="canvas"></canvas>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
 
-        <nav>
-            <ul>
-                <li><button id="sun">Soleil</button></li>
-                <li><button id="mercury">Mercure</button></li>
-                <li><button id="venus">Venus</button></li>
-                <li><button id="earth">Terre</button></li>
-                <li><button id="moon">Lune</button></li>
-                <li><button id="mars">Mars</button></li>
-                <li><button id="jupiter">Jupiter</button></li>
-                <li><button id="saturn">Saturne</button></li>
-                <li><button id="uranus">Uranus</button></li>
-                <li><button id="neptune">Neptune</button></li>
-                <div style="display: flex; justify-content: center;">
-                    <p style="margin-right: 5px;">Temps :   </p><p id="tempsDisplay">1</p>
-                    
-                </div>
-                <input type="range" id="temps" min="-100" max="100" value="1">
-            </ul>
-        </nav>
-
-</body>
+    <nav>
+      <ul>
+        <li><button id="sun">Soleil</button></li>
+        <li><button id="mercury">Mercure</button></li>
+        <li><button id="venus">Venus</button></li>
+        <li><button id="earth">Terre</button></li>
+        <li><button id="moon">Lune</button></li>
+        <li><button id="mars">Mars</button></li>
+        <li><button id="jupiter">Jupiter</button></li>
+        <li><button id="saturn">Saturne</button></li>
+        <li><button id="uranus">Uranus</button></li>
+        <li><button id="neptune">Neptune</button></li>
+        <div style="display: flex; justify-content: center">
+          <p style="margin-right: 5px">Temps :</p>
+          <p id="tempsDisplay">1</p>
+        </div>
+        <input type="range" id="temps" min="-100" max="100" value="1" />
+      </ul>
+    </nav>
+  </body>
 </html>

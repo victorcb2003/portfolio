@@ -1,4 +1,4 @@
-import * as THREE from "./node_modules/three/build/three.module.js";
+import * as THREE from "three";
 import { CameraControls } from "./modules/cameraControls.js";
 import { addStar } from "./modules/addStar.js";
 import { Planet } from "./modules/planet.js";
