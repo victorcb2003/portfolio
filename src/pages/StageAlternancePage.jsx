@@ -54,7 +54,7 @@ function StageAlternancePage() {
       titre: 'Déploiement web interne',
       details:
         'Déploiement d’applications web sur un serveur interne (configuration environnement, mise en production, gestion des accès).',
-      documentation: '/Documentation/Alternance_3_Maintenance.pdf',
+      documentation: '/Documentation/Alternance_4_Deploiement.pdf',
     },
     {
       periode: '19/11/2025 → 20/03/2026',
