@@ -59,7 +59,6 @@ function ProjetsPage() {
   return (
     <section>
       <h2>Projets</h2>
-      <p>Vue dédiée de mes réalisations techniques en formation et en entreprise.</p>
 
       <h3 className="section-title">Projets école</h3>
       <div className="timeline">
